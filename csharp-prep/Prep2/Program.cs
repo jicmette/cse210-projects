@@ -38,7 +38,7 @@ class Program
             letter = "F";
         }
 
-        // Prints the grade and detects the last digit to assign the - sign to the grade.
+        // Prints the grade and detects the last digit to assign the - or + sign to the grade.
         int signAdded = percent % 10;
 
         if (percent >= 90 && signAdded >= 7) 
