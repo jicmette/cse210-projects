@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        //I am still figure it out how to reset the random number after asking the user if he wants to play again.
+        
         Random randomGenerator = new Random();
         int number = randomGenerator.Next(1, 101);
 
