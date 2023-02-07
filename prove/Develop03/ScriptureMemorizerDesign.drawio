@@ -1,0 +1,32 @@
+<mxfile host="65bd71144e">
+    <diagram id="dOFFUSJ7jKULLOa_wioE" name="Page-1">
+        <mxGraphModel dx="2310" dy="1000" grid="1" gridSize="11" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="310" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="297" y="242" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="Scripture&lt;br&gt;&lt;br&gt;_scriptureText : string&lt;br&gt;_reference : int&lt;br&gt;_listWords : List&lt;br&gt;&lt;br&gt;&lt;br&gt;DisplayScripture()" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="341" y="88" width="195" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="311" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Reference&lt;br&gt;&lt;br&gt;_book : string&lt;br&gt;_chapter : int&lt;br&gt;_verse : string&lt;br&gt;_endVerse : string&lt;br&gt;&lt;br&gt;DisplayReference()" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="66" y="407" width="195" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="312" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="506" y="275" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="Word&lt;br&gt;&lt;br&gt;_book : string&lt;br&gt;_chapter : int&lt;br&gt;_verse : string&lt;br&gt;_scriptureWords&lt;br&gt;&lt;br&gt;HidenWords()" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="616" y="407" width="195" height="220" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
