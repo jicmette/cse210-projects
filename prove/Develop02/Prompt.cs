@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 public class Prompt
 {
-    
+
     Random rnd = new Random();
     string[] questions =
         {
@@ -21,7 +21,6 @@ public class Prompt
 
     public void DisplayQuestion()
     {
-        Files file = new Files();
 
         int index = rnd.Next(0, 5);
         Console.WriteLine(questions[index]);
@@ -30,6 +29,45 @@ public class Prompt
         string dateText = theCurrentTime.ToShortDateString();
         entries.Add($"Date: {dateText} - {entry1}");
         Console.WriteLine("Entry Saved!");
+        Console.WriteLine();
+
+    }
+
+    string fileName = "journal.txt.";
+    public void FileWriter()
+    {
+
+        using (StreamWriter outputFile = new StreamWriter(fileName))
+        {
+
+            foreach (string entry in entries)
+            {
+                outputFile.WriteLine($"{entry}");
+
+
+            }
+           
+            outputFile.Close();
+
+        }
+
+    }
+
+    public void FileReader()
+    {
+        entries = File.ReadAllLines(fileName).ToList();
+        using (StreamWriter outputFile = new StreamWriter(fileName))
+        {
+
+            foreach (string entry in entries)
+            {
+                Console.WriteLine($"{entry}");
+
+            }
+
+            outputFile.Close();
+
+        }
 
     }
 }
