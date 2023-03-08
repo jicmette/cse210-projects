@@ -1,0 +1,15 @@
+C:\Users\jicmS\OneDrive - BYU-Idaho\Israel\BYU-I\8th Semester\CSE210 Programming with Classes\cse210-projects\prove\Develop05\bin\Debug\net7.0\Develop05.exe
+C:\Users\jicmS\OneDrive - BYU-Idaho\Israel\BYU-I\8th Semester\CSE210 Programming with Classes\cse210-projects\prove\Develop05\bin\Debug\net7.0\Develop05.deps.json
+C:\Users\jicmS\OneDrive - BYU-Idaho\Israel\BYU-I\8th Semester\CSE210 Programming with Classes\cse210-projects\prove\Develop05\bin\Debug\net7.0\Develop05.runtimeconfig.json
+C:\Users\jicmS\OneDrive - BYU-Idaho\Israel\BYU-I\8th Semester\CSE210 Programming with Classes\cse210-projects\prove\Develop05\bin\Debug\net7.0\Develop05.dll
+C:\Users\jicmS\OneDrive - BYU-Idaho\Israel\BYU-I\8th Semester\CSE210 Programming with Classes\cse210-projects\prove\Develop05\bin\Debug\net7.0\Develop05.pdb
+C:\Users\jicmS\OneDrive - BYU-Idaho\Israel\BYU-I\8th Semester\CSE210 Programming with Classes\cse210-projects\prove\Develop05\obj\Debug\net7.0\Develop05.csproj.AssemblyReference.cache
+C:\Users\jicmS\OneDrive - BYU-Idaho\Israel\BYU-I\8th Semester\CSE210 Programming with Classes\cse210-projects\prove\Develop05\obj\Debug\net7.0\Develop05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jicmS\OneDrive - BYU-Idaho\Israel\BYU-I\8th Semester\CSE210 Programming with Classes\cse210-projects\prove\Develop05\obj\Debug\net7.0\Develop05.AssemblyInfoInputs.cache
+C:\Users\jicmS\OneDrive - BYU-Idaho\Israel\BYU-I\8th Semester\CSE210 Programming with Classes\cse210-projects\prove\Develop05\obj\Debug\net7.0\Develop05.AssemblyInfo.cs
+C:\Users\jicmS\OneDrive - BYU-Idaho\Israel\BYU-I\8th Semester\CSE210 Programming with Classes\cse210-projects\prove\Develop05\obj\Debug\net7.0\Develop05.csproj.CoreCompileInputs.cache
+C:\Users\jicmS\OneDrive - BYU-Idaho\Israel\BYU-I\8th Semester\CSE210 Programming with Classes\cse210-projects\prove\Develop05\obj\Debug\net7.0\Develop05.dll
+C:\Users\jicmS\OneDrive - BYU-Idaho\Israel\BYU-I\8th Semester\CSE210 Programming with Classes\cse210-projects\prove\Develop05\obj\Debug\net7.0\refint\Develop05.dll
+C:\Users\jicmS\OneDrive - BYU-Idaho\Israel\BYU-I\8th Semester\CSE210 Programming with Classes\cse210-projects\prove\Develop05\obj\Debug\net7.0\Develop05.pdb
+C:\Users\jicmS\OneDrive - BYU-Idaho\Israel\BYU-I\8th Semester\CSE210 Programming with Classes\cse210-projects\prove\Develop05\obj\Debug\net7.0\Develop05.genruntimeconfig.cache
+C:\Users\jicmS\OneDrive - BYU-Idaho\Israel\BYU-I\8th Semester\CSE210 Programming with Classes\cse210-projects\prove\Develop05\obj\Debug\net7.0\ref\Develop05.dll
