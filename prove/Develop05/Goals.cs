@@ -1,25 +1,29 @@
 using System;
+using System.Collections.Generic;
+using System.IO;
 
 public class Goals
 {
 
     private string _name;
     private string _description;
-    private int _points;
-    //private List<string> goals;
 
-    // public Goals(string name, string description, int points)
-    // {
-    //     _name = name;
-    //     _description = description;
-    //     _points = points;
+    private List<string> _goals;
 
-    // }
+    public Goals(string name, string description)
+    {
+        _name = name;
+        _description = description;
+        _goals = new List<string>();
+
+    }
+
 
     public void MenuTypesGoal()
     {   
         Console.WriteLine();
         Console.WriteLine("The types of goals are:");
+
         List<string> _typesGoals = new List<string>()
         {
             "1. Simple Goal", 
@@ -37,6 +41,7 @@ public class Goals
             if (_choiceUSerInt == 1)
             {
                 QuestionsGoals();
+                // _goals = new SimpleGoal(name, description, points);
             }
 
             else if (_choiceUSerInt == 2)
@@ -62,9 +67,7 @@ public class Goals
         string _pointString = Console.ReadLine();
         int _points = int.Parse(_pointString);
         
-
     }
-
     public void QuestionsGoalChecklist()
     {
         Console.WriteLine("How many times does this goal need to be accomplished for a bonus?");
