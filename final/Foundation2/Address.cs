@@ -17,16 +17,16 @@ class Address
     {
         return $"{_street}, {_city}, {_state}, {_country}.";
     }
-    public string USAOrNot()
+    public int USAOrNot()
     {
         if (_country == "USA")
         {
-            return $"SHIPMENT: ${5} dlls";
+            return 5;
         }
 
         else
         {
-            return $"SHIPMENT: ${35} dlls";
+            return 35;
         }
     }
 }

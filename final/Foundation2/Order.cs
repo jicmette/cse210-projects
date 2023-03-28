@@ -17,7 +17,6 @@ class Order
             Console.WriteLine();
         }
     }
-
     public void CreateListOrder2()
     {
         _order = new List<Product>();
@@ -32,18 +31,15 @@ class Order
             Console.WriteLine();
         }
     }
-
-    
-    public void GetTotalProducts()
+    public int GetTotalProducts()
     {
+        
         int subtotal = 0;
         foreach (Product p in _order)
         {
             subtotal += p.GetPriceProduct();
         }
-        Console.WriteLine($"SUBTOTAL: ${subtotal} dlls");
-
-        
+        return subtotal;
     }
     public void GetTotalQuantity()
     {

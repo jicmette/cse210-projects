@@ -20,19 +20,21 @@ class Program
         Console.WriteLine($"ORDER SUMMARY");
         Console.WriteLine();
         _o1.GetTotalQuantity();
-        _o1.GetTotalProducts();
-        // Console.WriteLine(_a1.USAOrNot());
-        Console.WriteLine($"ESTIMATED TOTAL: ");
+        Console.WriteLine($"SUBTOTAL: ${_o1.GetTotalProducts()} dlls");
+        Console.WriteLine($"SHIPMENT: ${_a1.USAOrNot()} dlls");
+        int _et1 = _o1.GetTotalProducts() + _a1.USAOrNot();
+        Console.WriteLine($"ESTIMATED TOTAL: $ {_et1} dlls");
+        
         Console.WriteLine("===================================");
 
         Console.WriteLine("SHIPPING LABEL");
         Console.WriteLine();
         Console.WriteLine("ORDER 00001");
+
         Customer _c1 = new Customer("Israel Carmona");
         Console.WriteLine($"CUSTOMER: " + _c1.GetNameCustomer());
         Console.WriteLine("ADDRESS: " + _a1.GetAddress());
         Console.WriteLine("===================================");
-
         Console.WriteLine("PACKING LABEL");
         Console.WriteLine();
         _o1.PackingLabel();
@@ -55,14 +57,16 @@ class Program
         Console.WriteLine($"ORDER SUMMARY");
         Console.WriteLine();
         _o2.GetTotalQuantity();
-        _o2.GetTotalProducts();
-        // Console.WriteLine(_a2.USAOrNot());
-        Console.WriteLine($"ESTIMATED TOTAL: ");
+        Console.WriteLine($"SUBTOTAL: ${_o2.GetTotalProducts()} dlls");
+        Console.WriteLine($"SHIPMENT: ${_a2.USAOrNot()} dlls");
+        int _et2 = _o2.GetTotalProducts() + _a2.USAOrNot();
+        Console.WriteLine($"ESTIMATED TOTAL: ${_et2} dlls");
         Console.WriteLine("===================================");
 
         Console.WriteLine("SHIPPING LABEL");
         Console.WriteLine();
         Console.WriteLine("ORDER 00002");
+        
         Customer _c2 = new Customer("Michael Jordan");
         Console.WriteLine($"CUSTOMER: " + _c2.GetNameCustomer());
         Console.WriteLine("ADDRESS: " + _a2.GetAddress());
