@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class ReflectingActivity : BreathingActivity
 {
-        public ReflectingActivity(string activity, string text, string question) : base(activity, text, question)
+    public ReflectingActivity(string activity, string text, string question) : base(activity, text, question)
     {
 
     }
@@ -35,7 +35,7 @@ public class ReflectingActivity : BreathingActivity
         Console.Write("You may begin in: ");
 
         AnimationNumbers();
-        
+
         Console.Clear();
 
         List<string> _questions = new List<string>
@@ -52,21 +52,21 @@ public class ReflectingActivity : BreathingActivity
         };
 
         List<string> animationQRA = new List<string>();
-            animationQRA.Add("|");
-            animationQRA.Add("/");
-            animationQRA.Add("-");
-            animationQRA.Add("\\");
-            animationQRA.Add("|");
-            animationQRA.Add("/");
-            animationQRA.Add("-");
-            animationQRA.Add("\\");
-            animationQRA.Add("|");
-            animationQRA.Add("/");
-            animationQRA.Add("-");
-            animationQRA.Add("\\");
-            animationQRA.Add("|");
-            animationQRA.Add("/");
-            animationQRA.Add("-");
+        animationQRA.Add("|");
+        animationQRA.Add("/");
+        animationQRA.Add("-");
+        animationQRA.Add("\\");
+        animationQRA.Add("|");
+        animationQRA.Add("/");
+        animationQRA.Add("-");
+        animationQRA.Add("\\");
+        animationQRA.Add("|");
+        animationQRA.Add("/");
+        animationQRA.Add("-");
+        animationQRA.Add("\\");
+        animationQRA.Add("|");
+        animationQRA.Add("/");
+        animationQRA.Add("-");
 
         foreach (string a in _questions)
         {
@@ -77,9 +77,9 @@ public class ReflectingActivity : BreathingActivity
             {
                 Console.Write(b);
                 Thread.Sleep(1000);
-                Console.Write("\b \b");       
+                Console.Write("\b \b");
             }
-            
+
             Console.WriteLine();
         }
 
