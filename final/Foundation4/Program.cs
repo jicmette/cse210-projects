@@ -9,13 +9,13 @@ class Program
 
         List<Activity> _activities = new List<Activity>();
 
-        Running _ra = new Running("26 January 2018", "Running", 30.00, 4.8);
+        Running _ra = new Running("30 March 2023", "Running", 30.00, 4.8);
         _activities.Add(_ra);
 
-        Cycling _ca = new Cycling("03 November 1991", "Cycling", 4.90, 90.50);
+        Cycling _ca = new Cycling("04 April 2023", "Cycling", 60.00, 25.60);
         _activities.Add(_ca);
 
-        Swimming _sa = new Swimming("23 March 2023", "Swimming", 14.22, 5);
+        Swimming _sa = new Swimming("23 March 2023", "Swimming", 20.50, 5);
         _activities.Add(_sa);
 
         Console.WriteLine();
