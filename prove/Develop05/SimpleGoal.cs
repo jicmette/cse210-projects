@@ -2,33 +2,31 @@ using System;
 
 public class SimpleGoal : Goals
 {
-    private string _name;
-    private string _description;
-    private int _points;
-
-    private List<Goals> _simpleGoals;
-
-    public SimpleGoal(string name, string description, int points) : base(name, description)
+    public SimpleGoal(string name, string description, int points) : base(name, description, points)
     {
-        _name = name;
-        _description = description;
-        _points = points;
-        _simpleGoals = new List<Goals>();
+
 
     }
 
-public void ListSimpleGoal()
-{   
-    // _simpleGoals = new List<Goals>();
-    // _simpleGoals.Add(name);
-    // _simpleGoals.Add(description);
-    // _simpleGoals.Add(points);
-}
+    public override string GetName()
+    {
+        _name = Console.ReadLine();
+        return _name;
+    }
 
-public string GetSimpleListText()
-{
-    return _simpleGoals.ToString();
-}
+    public override string GetDescription()
+    {
+        _description = Console.ReadLine();
+        return _description;
+    }
+
+    public override string GetPoints()
+    {
+        string _pointString = Console.ReadLine();
+        _points = Convert.ToInt32(_pointString);
+        return _pointString;
+    }
+
 
 
 }

@@ -2,33 +2,29 @@ using System;
 
 public class EternalGoal : Goals
 {
-    private string _name;
-    private string _description;
-    private int _points;
-
-    private List<Goals> _eternalGoal;
-
-    public EternalGoal(string name, string description, int points) : base(name, description)
+    public EternalGoal(string name, string description, int points) : base(name, description, points)
     {
-        _name = name;
-        _description = description;
-        _points = points;
-        _eternalGoal = new List<Goals>();
 
     }
 
-public void ListSimpleGoal()
-{   
-    // _simpleGoals = new List<Goals>();
-    // _simpleGoals.Add(name);
-    // _simpleGoals.Add(description);
-    // _simpleGoals.Add(points);
-}
+    public override string GetName()
+    {
+        _name = Console.ReadLine();
+        return _name;
+    }
 
-public string GetEternalListText()
-{
-    return _eternalGoal.ToString();
-}
+    public override string GetDescription()
+    {
+        _description = Console.ReadLine();
+        return _description;
+    }
+
+    public override string GetPoints()
+    {
+        string _pointString = Console.ReadLine();
+        _points = Convert.ToInt32(_pointString);
+        return _pointString;
+    }
 
 
 }

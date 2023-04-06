@@ -1,50 +1,61 @@
-using System;
+// using System;
 
 // public class FileManage : Goals
 // {
+//     public FileManage(string name, string description, int points) : base(name, description, points)
+//     {
 
-// //     // public FileManage()
-// //     // {
-// //     //     _name = name;
-// //     //     _description = description;
-// //     //     _points = points;
+//     }
 
-// //     // // }
-// //     // // string fileName = "EternalQuest.txt";
-// //     // public void FileWriter()
-// //     // {
+//     public override string GetName()
+//     {
+//         return "hola";
+//     }
 
-// //     //     using (StreamWriter outputFile = new StreamWriter(fileName))
-// //     //     {
+//     public override string GetDescription()
+//     {
+//         return "hola 2";
+//     }
 
-// //     //         foreach (string entry in goals)
-// //     //         {
-// //     //             outputFile.WriteLine($"{entry}");
+//     public override string GetPoints()
+//     {
+//         return "hola 3";
+//     }
+
+//     string fileName = "EternalQuest.txt";
+//     public void FileWriter()
+//     {
+
+//         using (StreamWriter outputFile = new StreamWriter(fileName))
+//         {
+
+//             foreach (Goals g in _goals)
+//             {
+//                 outputFile.WriteLine($"{_goals}");
 
 
-// //     //         }
-           
-// //     //         outputFile.Close();
+//             }
 
-// //     //     }
+//             outputFile.Close();
 
-// //     // }
+//         }
 
-// //     // public void FileReader()
-// //     // {
-// //     //     entries = File.ReadAllLines(fileName).ToList();
-// //     //     using (StreamWriter outputFile = new StreamWriter(fileName))
-// //     //     {
+//     }
 
-// //     //         foreach (string entry in goals)
-// //     //         {
-// //     //             Console.WriteLine($"{entry}");
+//     public void FileReader()
+//     {
+//         _listGoals = File.ReadAllLines(fileName).ToList();
+//         using (StreamWriter outputFile = new StreamWriter(fileName))
+//         {
 
-// //     //         }
+//             foreach (string goal in _listGoals)
+//             {
+//                 Console.WriteLine($"{goal}");
 
-// //     //         outputFile.Close();
+//             }
 
-// //     //     }
+//             outputFile.Close();
 
-// //     // }
+//         }
+//     }
 // }
