@@ -9,7 +9,7 @@ class Program
         Console.WriteLine("Welcome to the Eternal Quest");
         Console.WriteLine();
 
-        
+
         // int _points = 0;
 
         MainMenu();
@@ -46,6 +46,8 @@ class Program
                 string _inputUser = Console.ReadLine();
                 _choice = int.Parse(_inputUser);
 
+                string fileName = "EternalQuest.txt.";
+
                 if (_choice == 1)
                 {
                     MenuTypesGoal();
@@ -53,12 +55,30 @@ class Program
 
                 else if (_choice == 2)
                 {
+                    Console.WriteLine();
+                    foreach (Goals g in _goals)
+                    {
+                        Console.WriteLine(g);
+                    }
+                    Console.WriteLine();
 
                 }
 
                 else if (_choice == 3)
                 {
+                    
+                    using (StreamWriter outputFile = new StreamWriter(fileName))
+                    {
 
+                        foreach (Goals g in _goals)
+                        {
+                            string _newList = string.Join(", ", _goals);
+                            outputFile.WriteLine(_newList);
+                        }
+
+                        outputFile.Close();
+
+                    }
                 }
 
                 else if (_choice == 4)
@@ -82,13 +102,11 @@ class Program
 
     }
 
+    public static List<Goals> _goals = new List<Goals>().ToList();
     static void MenuTypesGoal()
     {
         Console.WriteLine();
         Console.WriteLine("The types of goals are:");
-
-        List<Goals> _goals = new List<Goals>();
-
 
         List<string> _typesGoals = new List<string>()
         {
@@ -101,6 +119,7 @@ class Program
         {
             Console.WriteLine(a);
         }
+
         Console.Write("Which type of goal would you like to create? ");
         string _choiceUser = Console.ReadLine();
         int _choiceUSerInt = int.Parse(_choiceUser);
@@ -152,7 +171,7 @@ class Program
             Console.WriteLine("What is the amount of points associated with this goal?");
             _eg.GetPoints();
 
-            
+            _goals.Add(_eg);
 
             Console.WriteLine();
         }
@@ -192,5 +211,9 @@ class Program
             Console.WriteLine();
         }
     }
+
+
+
+
 }
 
